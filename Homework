@@ -1,0 +1,45 @@
+def convert_meters():
+    meters = float(input("Введіть кількість метрів: "))
+    print("Оберіть одиницю для переведення:")
+    print("1 - Мілі (miles)")
+    print("2 - Дюйми (inches)")
+    print("3 - Ярди (yards)")
+
+    choice = input("Ваш вибір (1, 2 або 3): ")
+    if choice == "1":
+        result = meters * 0.000621371 # 1 метр =
+        0.000621371 миль
+        print(f"{meters} метрів = {result:.6f} миль")
+    elif choice =="2":
+        result = meters * 39.3701 # 1 метр =
+        39.3701 дюймів
+        print(f"{meters} метрів = {result:.2f}
+        дюймів")
+    elif choice =="3":
+        result = meters * 1.09361 # 1 метр =
+        1.09361 ярдів
+        print(f"{meters} метрів = {result:.2f}
+        ярдів")
+    else:
+        print(Невірний вибір. Будь ласка,)
+        введіть 1, 2 або 3.")
+
+        convert_meters()
+
+        def is_lucky_numbers(шестизначне=None):
+            number = input(Введіть шестизначне
+            число: ")
+
+            if len(number) != 6 or not number.isdigit():
+                print("Помилка! Введіть рівно
+                      шестизначне число.")
+            return
+        first_half = sum(int(digit) for digit in
+                         number[3:])
+        
+        if first_half == second_half:
+            print(f"{number} - це щасливе число ")
+        else:
+            print(f"{number} - це нещасливе число ")
+            
+            is_lucky_number()
